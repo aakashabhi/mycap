@@ -8,4 +8,4 @@ def fibonacci(n):
 print("Enter the Value of N")
 n=int(input())
 for i in range(1,n+1):
-    print(fibonacci(i))
+    print(fibonacci(i),end=",")
