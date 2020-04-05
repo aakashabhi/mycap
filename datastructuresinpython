@@ -1,0 +1,35 @@
+1.Assigning elements to different lists
+
+l1=[]
+l2=[]
+while(True):
+    c=int(input("Enter 1 TO Assign Element to List 1\n Enter 2 to Assign Element to List 2\n Enter 0 to stop Process"))
+    if(c==0):
+        break
+    elif(c==1):
+        l1.append(int(input("Enter Element: ")))
+    elif(c==2):
+        l2.append(int(input("Enter Element: ")))
+    else:
+        print("Invalid")
+print("List 1 : ",l1)
+print("List 2 : ",l2)
+
+=============================================================================================================================================
+2.Accessing Elements from a Tuple
+
+tup=(3,6,4,23,5,2,5,2,3,6)
+n=int(input("Enter The Index of Element to be Accessed"))
+print(tup[n])
+==============================================================================================================================================
+3.Deleting Different Dictionary Elements
+
+capitals = { "Bratislava": 424207, "Vilnius": 556723, "Lisbon": 564657,
+             "Riga": 713016, "Jerusalem": 780200 }
+s=input("Enter the Key of Element to be deleted")
+print("Dictionary Before deletion: ",capitals)
+del capitals[s]
+print("Dictionary After deletion: ",capitals)
+
+        
+        
