@@ -1,0 +1,27 @@
+import time
+l=[]
+ans=[]
+cap=[chr(i+65)for i in range(26)]
+sma=[chr(i+97) for i in range(26)]
+no=[str(chr(i+49)) for i in range(8)]
+fin=cap+no+sma
+print(fin)
+print("Enter Number of Words Required\n")
+n=int(input())
+for i in range(n):
+    print("Enter Length Of Word Required")
+    le=int(input())
+    l.append(le)
+print("The Required Words are(Please Wait)")
+for i in l:
+    st=""
+    for j in range(i):
+        a=time.localtime()
+        s=a.tm_sec
+        if(s<60-i):
+            s+=j
+        st+=fin[s-1]
+        time.sleep(1)
+    print(st)
+        
+        
